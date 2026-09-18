@@ -1,1 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Smart Campus - SVIT Solapur</title>
+<style>
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;font-family:Arial,"Noto Sans Devanagari",sans-serif;background:#eef2ff;color:#1d1d1f}
+  header{background:linear-gradient(135deg,#2239a6,#5267d9);color:#fff;padding:28px 16px;text-align:center;position:sticky;top:0;z-index:10}
+  header h1{margin:0;font-size:30px}
+  header p{margin:8px 0 0;font-size:15px}
+  nav{display:flex;gap:8px;overflow:auto;padding:10px;background:#fff;position:sticky;top:94px;z-index:9;box-shadow:0 2px 8px #ccd0e0}
+  nav a{white-space:nowrap;text-decoration:none;background:#3949ab;color:#fff;padding:10px 14px;border-radius:10px;font-size:14px}
+  main{max-width:900px;margin:auto;padding:18px}
+  .hero,.card{background:#fff;border-radius:18px;box-shadow:0 4px 14px rgba(40,50,90,.14);padding:20px;margin:16px 0}
+  .hero{background:linear-gradient(135deg,#ffffff,#f2f4ff)}
+  h2{margin:0 0 14px;color:#2f419c}
+  h3{color:#2f419c;margin-bottom:8px}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px}
+  .feature{background:#f4f6ff;border-radius:14px;padding:14px}
+  .feature strong{display:block;margin-bottom:5px}
+  .notice{border-left:5px solid #3949ab;background:#f7f8ff;padding:14px;border-radius:10px;margin:12px 0;line-height:1.65}
+  .notice.warning{border-left-color:#e67e22;background:#fff8ef}
+  .notice h3{margin:0 0 8px}
+  .event{border:1px solid #dde2ff;border-radius:16px;padding:16px;margin:14px 0;background:#fbfbff}
+  .event .tag{display:inline-block;background:#3949ab;color:#fff;padding:5px 9px;border-radius:999px;font-size:12px;margin-bottom:8px}
+  .btn{display:inline-block;text-decoration:none;background:#3949ab;color:#fff;padding:11px 15px;border-radius:10px;margin:6px 6px 0 0;font-weight:700}
+  .btn.secondary{background:#e9edff;color:#2f419c}
+  .details{line-height:1.65}
+  table{width:100%;border-collapse:collapse;background:#fff;font-size:13px}
+  th,td{border:1px solid #b9bfd5;padding:8px;text-align:center}
+  th{background:#e9edff;color:#263783}
+  .break{background:#f2f3f7;font-weight:700}
+  .day{font-weight:700;background:#f7f8ff}
+  .small{font-size:13px;color:#5d6375}
+  footer{text-align:center;padding:24px;color:#666}
+  @media(max-width:620px){table{font-size:10px}th,td{padding:5px}.nav{} header{position:static}nav{top:0}h1{font-size:26px}}
+</style>
+</head>
+<body>
 
+<header>
+  <h1>🎓 Smart Campus</h1>
+  <p>Student Information &amp; Campus Events Portal | SVIT Solapur</p>
+</header>
+
+<nav>
+  <a href="#home">Home</a>
+  <a href="#timetable">Timetable</a>
+  <a href="#notices">Notices</a>
+  <a href="#events">Events</a>
+</nav>
+
+<main>
+<section id="home" class="hero">
+  <h2>🏫 Welcome to Smart Campus</h2>
+  <p>This prototype brings the student's timetable, important notices and college events into one mobile-friendly website.</p>
+  <div class="grid">
+    <div class="feature"><strong>📚 Timetable</strong>Class timetable with subjects, breaks and practical batches.</div>
+    <div class="feature"><strong>📢 Notices</strong>Important college announcements in one place.</div>
+    <div class="feature"><strong>📅 Events</strong>Poster presentation and Tech Quiz registration details.</div>
+    <div class="feature"><strong>📱 Mobile Friendly</strong>Designed to be demonstrated directly from a phone browser.</div>
+  </div>
+</section>
+
+<section id="timetable" class="card">
+  <h2>📚 F.Y. B.Tech. Timetable</h2>
+  <p><b>Class:</b> F.Y. B.Tech. &nbsp; <b>Division:</b> Div-X &nbsp; <b>Room No.:</b> 01</p>
+  <p class="small">Department of Engineering and General Science</p>
+
+  <div style="overflow-x:auto">
+  <table>
+    <tr>
+      <th>Time / Day</th><th>Thursday</th><th>Friday</th><th>Saturday</th><th>Sunday</th><th>Monday</th><th>Tuesday</th>
+    </tr>
+    <tr><td>9:00–9:30</td><td colspan="6" class="break">Pranayama</td></tr>
+    <tr><td>9:30–10:30</td><td>M-1</td><td>M-1</td><td>M-1</td><td>EM</td><td>M-1</td><td>M-1</td></tr>
+    <tr><td>10:30–11:30</td><td>EM</td><td>EM</td><td>BEE</td><td>PHY</td><td>BEE</td><td>PHY</td></tr>
+    <tr><td>11:30–12:30</td><td>BEE</td><td>CS</td><td>PHY</td><td>BEE</td><td>M-1</td><td>BEE</td></tr>
+    <tr><td>12:30–1:30</td><td colspan="6" class="break">LUNCH BREAK</td></tr>
+    <tr><td>1:30–2:30</td><td>Library</td><td>PHY</td><td>EM</td><td>PHY</td><td>EM</td><td>CS</td></tr>
+    <tr><td>2:30–3:30</td><td>PHY</td><td>BEE</td><td>PHY</td><td>CS</td><td>BEE</td><td>EM</td></tr>
+    <tr><td>3:30–3:45</td><td colspan="6" class="break">Short Break</td></tr>
+    <tr><td>3:45–4:45</td>
+      <td rowspan="2">A1-PHY<br>A2-EM</td>
+      <td rowspan="2">A1-EM<br>A2-PHY</td>
+      <td rowspan="2">A1-BEE<br>A2-EM</td>
+      <td rowspan="2">A1-EM<br>A2-BEE</td>
+      <td rowspan="2">A1-M1<br>A2-PHY</td>
+      <td rowspan="2">A1-PHY<br>A2-M1</td>
+    </tr>
+    <tr><td>4:45–5:30</td></tr>
+  </table>
+  </div>
+  <p class="small">Abbreviations: PHY = Engineering Physics, M-1 = Engineering Mathematics-I, BEE = Basic Electrical &amp; Electronics, EM = Engineering Mechanics, CS = Communication Skills.</p>
+</section>
+
+<section id="notices" class="card">
+  <h2>📢 Important Notices</h2>
+
+  <div class="notice">
+    <h3>Notice 1</h3>
+    <p>सर्व विद्यार्थ्यांना सूचित करण्यात येते की,</p>
+    <p>ज्या विद्यार्थ्यांनी अद्यापपर्यंत महाविद्यालयात Reporting केलेली नाही तसेच University Eligibility Form भरलेला नाही, अशा विद्यार्थ्यांनी सदर बाबीची तात्काळ पूर्तता करावी.</p>
+    <p>अन्यथा, भविष्यात विद्यापीठाकडून आकारण्यात येणाऱ्या कोणत्याही प्रकारच्या दंडासाठी (Fine) संबंधित विद्यार्थी स्वतः जबाबदार राहील. यासाठी महाविद्यालय कोणत्याही प्रकारे जबाबदार राहणार नाही.</p>
+    <p>सर्व विद्यार्थ्यांनी याची गांभीर्याने नोंद घ्यावी.</p>
+  </div>
+
+  <div class="notice warning">
+    <h3>Notice 2 — Gauri Pooja Holiday</h3>
+    <p><b>Date:</b> 17/09/2026</p>
+    <p>All the students, teaching &amp; non-teaching staff members are informed that the college will remain closed on <b>Friday, 18/09/2026</b> on account of <b>Gauri Pooja</b>.</p>
+    <p>The holiday will be recovered by making the coming <b>Wednesday, 23/09/2026</b>, a working day with the timetable of Friday.</p>
+    <p><b>Important:</b> If the students are observed absent on <b>Saturday morning, 19/09/2026</b>, fine will be applicable as per rules &amp; regulations.</p>
+  </div>
+</section>
+
+<section id="events" class="card">
+  <h2>📅 College Events</h2>
+
+  <div class="event">
+    <span class="tag">20 SEPTEMBER 2026</span>
+    <h3>💡 Poster Presentation</h3>
+    <div class="details">
+      <p><b>Date:</b> 20 September 2026 (Monday)</p>
+      <p><b>Time:</b> 2:00 PM</p>
+      <p><b>Venue:</b> Swami Vivekanand Institute of Technology, Solapur</p>
+      <p><b>Entry Fee:</b> ₹50 per entry</p>
+      <p><b>Prizes:</b> 1st ₹999 &nbsp; | &nbsp; 2nd ₹799 &nbsp; | &nbsp; 3rd ₹499</p>
+      <p><b>Theme:</b> Think • Analyze • Present — Ideas on Paper… Impact in the World!</p>
+    </div>
+    <a class="btn" target="_blank" rel="noopener" href="https://docs.google.com/forms/d/e/1FAIpQLSeDvjaJ5Ie75rybmuIjrHddp7zvSkXDD1ezAVj9-D-HIOEpQw/viewform?usp=publish-editor">📝 Register for Poster Presentation</a>
+  </div>
+
+  <div class="event">
+    <span class="tag">22 SEPTEMBER 2026</span>
+    <h3>🧠 TECH QUIZ 2026 | SVIT Solapur 🚀</h3>
+    <div class="details">
+      <p><b>Think • Solve • Learn • Compete • Grow</b></p>
+      <p>Ready to challenge your technical knowledge and problem-solving skills? Join <b>TECH QUIZ 2026</b> at <b>Swami Vivekanand Institute of Technology, Solapur</b> and compete with the brightest minds!</p>
+      <p><b>Date:</b> 22 September 2026 (Tuesday)</p>
+      <p><b>Time:</b> 12:30 PM – 5:30 PM</p>
+      <p><b>Venue:</b> Swami Vivekanand Institute of Technology, Solapur</p>
+      <p><b>Entry Fee:</b> ₹30 (Snacks Included)</p>
+      <p><b>Rounds:</b> MCQ (Technical Concepts) + MCQ (Aptitude &amp; Logical Reasoning)</p>
+      <p><b>Why participate?</b> Test technical concepts, aptitude, DSA &amp; algorithms; win trophies, medals &amp; certificates; certificate for every participant; snacks included.</p>
+      <p><b>Contact:</b> Sairaj: 9284335877 &nbsp; | &nbsp; Chanakya: 9284931422</p>
+    </div>
+    <a class="btn" target="_blank" rel="noopener" href="https://docs.google.com/forms/d/e/1FAIpQLSf3no6f-Fh-KLSyVDooh0nKaGQ7-eVzEAFT3IQM2Sel17-sCg/viewform?usp=dialog">📝 Register for Tech Quiz</a>
+  </div>
+</section>
+</main>
+
+<footer>
+  Smart Campus © 2026 | SVIT Solapur
+</footer>
+
+</body>
+</html>
